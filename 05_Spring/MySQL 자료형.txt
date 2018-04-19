@@ -1,0 +1,22 @@
+숫자
+	TINYINT(자리수)	
+	SMALLINT(자리수)
+	MEDIUMINT(자리수)
+	INT(자리수)
+	BIGINT(자리수)
+
+	FLOAT(전체자리수, 소수점이하자리수)
+	DOUBLE(전체자리수, 소수점이하자리수)
+
+글자
+	CHAR(글자수) => 255자까지
+	VARCHAR(글자수) => 255자까지
+	TINYTEXT => 255자까지
+	TEXT 	=> 65535자까지
+	MEDIUMTEXT => 16777215자까지
+	LONGTEXT => 4294967295자까지
+
+날짜
+	DATE
+	TIME
+	DATETIME

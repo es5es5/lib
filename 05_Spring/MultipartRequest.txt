@@ -1,0 +1,11 @@
+String path = request.getSession().getServletContext().getRealPath("resources/etc");
+
+MultipartRequest mr = new MultipartRequest(request, path, 30 * 1024 * 1024, "euc-kr", new DefaultFileRenamePolicy());
+
+String im_img = mr.getFilesystemName("im_img");
+im_img = URLEncoder.encode(im_img, "euc-kr");
+im_img = im_img.replace("+", " ");
+
+
+try-catch안에 넣는건 기본.
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource
+		name="lhwPool"
+		type="javax.sql.DataSource"
+		driverClassName="oracle.jdbc.driver.OracleDriver"
+		factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+		username="lhw"
+		password="lhw"
+		url="jdbc:oracle:thin:@localhost:1521:xe"
+		maxTotal="500"
+		maxIdle="100"
+	/>
+</Context>
