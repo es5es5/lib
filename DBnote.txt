@@ -1,0 +1,184 @@
+
+	(DB)
+	데이터를 영원히 보관하려면 HDD에 써야 하는데
+	단순 txt파일 같은 경우
+		- 다양한 기능(검색, 수정, 통계, ...) 구현 불편.
+		- 파일 관리 허술
+		- 외부 컴퓨터에서 접근 불편
+
+	데이터베이스(DB) 서버
+		버전 		: Oracle 11g Express Edition
+		IP주소 		: 172.16.1.22
+		포트 		: 1521
+		DB이름(SID)	: xe
+		관리자ID		: t
+		관리자PW	: t
+		오라클 서버에 접속하려면
+		Oracle Instant Client 필요
+---------------------------------------------------------------------
+서버에서 cmd
+(집에서 할 경우)	
+	- 기본 관리자 접속
+	splplus / as sysdba
+	/ : 현재 운영체제의 계정을 사용하겠다는 의미
+	- 원격에서 쓸 수 있는 관리자 계정 만들기
+	create user (ID) identified by (pw);
+	
+	- 관리자 계정 활성화	
+	grant connect, dba to (ID);
+---------------------------------------------------------------------
+- 접속할때
+	sqlplus (ID)/(PW)@(IP주소):(포트)/(SID)
+- 계정 만들기
+	create user (aladdinz) identified by 9156;
+- 권한 설정
+	grant connect, resource to (ID);
+- 그 계정이 사용할 tablespace 만들기
+	create tablespace (ts이름) datafile 'C:/milo/DB/DBfile/(파일명).dbf' size 500m;
+- 그 계정에 tablespace 배정
+	alter user (ID) default tablespace (ts이름);
+----------------------------------------------------------------------
+(예비계정)
+s1 : s1
+s2 : s2
+s3 : s3
+s4 : s4
+s5 : s5
+-----------------------------------------------------------------------
+SQL(Structured Query Language) : DB에 뭔가를 할 때 쓰는 언어
+	DB메이커들마다 거의 비슷
+	대소문자 구별 없음(대문자로 인식)
+
+DB에서 열 : 필드
+DB에서 행 : 데이터 or 레코드
+
+테이블 만들기
+	create table 테이블명(
+	          필드(열)제목 자료형 옵션,
+	          필드(열)목 자료형 옵션,
+	           ...
+	);
+
+
+
+
+	not null : 반드시 데이터 있어야되게
+	primary key : not null + 중복데이터 입력불가		
+만들어보기~
+	create table feb05_student(
+	s_no number(2) primary key,
+	s_name varchar2(10 char) not null,
+	s_age number(3) not null
+	);
+
+	desc 테이블명;	<<-- 구조보기
+
+
+
+
+--------------------------------------------------
+CRUD
+Create 	: 데이터 만들기
+	insert into 테이블명(필드명, 필드명, ...)
+	values(값1, 값2, ...)
+
+번호 자동으로 올라가게
+1. sequence 생성
+create sequence 시퀀스명(테이블명_seq);
+
+2. insert 할때 사용
+insert into 테이블명 values(시퀀스명.nextval,...);
+
+Read	:  데이터 조회
+	select * from 테이블명;
+	select 필드명,필드명,...from 테이블명;	<<-- 원하는것만 조회
+	select 필드명,필드명,...from 테이블명 where 조건;
+
+
+	select t_test, (t_test + t_test) / 2 as t
+	order by t;
+	------- 이런식으로 연산뒤 as (변수명)으로 줄여쓸 수 있음
+
+order by 필드명 		: 오름차순
+order by 필드명 desc 	: 내림차순
+
+
+
+
+-회원 테이블 전체 조회
+	select * from feb05_customer;
+-회원 테이블에서 이름만 전체 조회
+	select c_name,c_height from feb05_customer;
+-메뉴 테이블에서 메뉴명만 전체 조회
+ 	select c_name from feb05_cafe;
+-회원 키 평균(통계함수)
+max(필드명), min(필드명), avg(필드명), count(필드명)
+-회원 키, 몸무게의 합
+select c_height+c_weight from feb05_customer;
+-회원 키 m단위로 보기
+select c_height/100 from feb05_customer;
+-키가 180 이상인 회원 전체정보
+select * from feb05_customer where c_height >=180;
+
+-이름에 w가 들어가는 회원 전체정보
+select * from feb05_customer where c_name like '%w%';
+
+	% : 몇글자가 들어와도 상관없다
+	ex) %w% : ㅋㅋㅋw, ㅋㅋㅋwㅋㅋㅋ, wㅋㅋㅋ
+	     %w   : ㅋㅋㅋw
+
+
+
+*****최종 사인*****
+
+commit;			<< -- 최종 사인입력(저장하겠다)
+rollback;			<< -- 작업 취소
+
+
+
+Update	: 데이터 수정
+	update 테이블명
+	set 필드명 = 바꿀값, 필드명=바꿀값, ...
+	where 조건;
+
+---문자열 붙일때 		: concat(a,b)
+---문자열 바꿀때(수정) 	: replace(내용, 바꿀거, 바꿀내용)
+
+
+
+
+
+
+
+
+Delete	: 데이터 삭제
+	delete from 테이블 명
+	where 조건
+
+
+	drop table 테이블명 cascade constraint purge;
+
+
+Oracle 의 자료형
+   글자(String)
+   char(???)  :  
+	뒤에 띄어쓰기를 넣어서 무조건 그 글자수대로 만들어서 저장(용량낭비)
+   	자리수를 무조건 보장하는 데이터(ex : 주민번호, 남/여)
+      
+   varchar2(???)  : 
+	글자를 덜 써도, 뒤에 띄어쓰기 넣지 않음(용량낭비 없지만 char보다 느림)
+	일반적인 글자	
+
+	???  < 숫자만 넣으면
+	ex) name char(3)	3 : 3byte (한글 한글자, 영어는 3글자)
+			3 char : 글자수				
+
+   숫자(int,double)
+	number(5) : 최대 5자리 정수
+	number(5, 2) : 전체 5자리 그중에 소수점 이하2자리(ex 123.12)
+
+  날짜(date)
+	sysdate : 현재시간날짜
+	to_date('2000-02-02 AM 10:11:22', 'YYYY-MM-DD AM HH:MI:SS')
+
+	
