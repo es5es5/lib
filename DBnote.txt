@@ -38,6 +38,24 @@
 - 그 계정에 tablespace 배정
 	alter user (ID) default tablespace (ts이름);
 ----------------------------------------------------------------------
+ID : lhw
+PW : lhw
+ts : lhwtable
+
+lhwtable.dbf
+
+
+
+
+
+
+
+
+
+
+
+
+
 (예비계정)
 s1 : s1
 s2 : s2
