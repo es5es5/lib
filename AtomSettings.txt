@@ -1,0 +1,43 @@
+ATOM에서 이클립스 단축키 사용하기
+
+keymap.cson에 넣어주세요.
+
+'body':
+
+  'ctrl-shift-w': 'tabs:close-all-tabs'
+
+'atom-text-editor':
+
+  'alt-up': 'core:move-up'
+
+  'alt-down': 'core:move-down'
+
+
+
+'atom-text-editor:not([mini])':
+
+  'alt-up': 'editor:move-line-up'
+
+  'alt-down': 'editor:move-line-down'
+
+  'alt-shift-up': 'bracket-matcher:select-inside-brackets'
+
+
+
+'.platform-win32 atom-text-editor:not([mini]), .platform-linux atom-text-editor:not([mini])':
+
+  'ctrl-d': 'editor:delete-line'
+
+  'ctrl-l': 'go-to-line:toggle'
+
+  'ctrl-alt-down': 'editor:duplicate-lines'
+
+  'ctrl-alt-up': 'editor:duplicate-lines'
+
+
+
+'.platform-win32 atom-workspace, .platform-linux atom-workspace':
+
+  'ctrl-h': 'project-find:show'
+
+  'ctrl-S': 'window:save-all'
