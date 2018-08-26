@@ -12,7 +12,7 @@ keymap.cson에 넣어주세요.
 
   'alt-down': 'core:move-down'
 
-
+  'ctrl-shift-f': 'editor:auto-indent'
 
 'atom-text-editor:not([mini])':
 
