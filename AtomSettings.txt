@@ -1,6 +1,6 @@
-ATOM¿¡¼­ ÀÌÅ¬¸³½º ´ÜÃàÅ° »ç¿ëÇÏ±â
+ATOMì—ì„œ ì´í´ë¦½ìŠ¤ ë‹¨ì¶•í‚¤ ì‚¬ìš©í•˜ê¸°
 
-keymap.cson¿¡ ³Ö¾îÁÖ¼¼¿ä.
+keymap.csonì— ë„£ì–´ì£¼ì„¸ìš”.
 
 'body':
 
@@ -12,7 +12,7 @@ keymap.cson¿¡ ³Ö¾îÁÖ¼¼¿ä.
 
   'alt-down': 'core:move-down'
 
-
+  'ctrl-shift-f': 'editor:auto-indent'
 
 'atom-text-editor:not([mini])':
 
@@ -41,3 +41,22 @@ keymap.cson¿¡ ³Ö¾îÁÖ¼¼¿ä.
   'ctrl-h': 'project-find:show'
 
   'ctrl-S': 'window:save-all'
+
+
+============================================
+ATOM PACKAGES.
+
+atom-beautify
+autoclose-html
+highlight-selected
+color-picker
+javascript-snippets
+language-vue
+platformio-ide-terminal
+
+=============================================
+ATOM THEMES.
+
+seti-ui
+Atom-material-syntax-dark
+=============================================
