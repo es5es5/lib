@@ -10,3 +10,5 @@ VSCode Extensions
 - Project Manager
 - Vetur
 - TSLint
+- open in browser
+- eclipse keymap
