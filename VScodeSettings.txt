@@ -1,0 +1,12 @@
+VSCode Extensions
+- Auto Close Tag
+- Beautify
+- Color Picker
+- ESlint
+- GitLens
+- Material Icon Theme
+- Material Syntax - Dark
+- Night Owl
+- Project Manager
+- Vetur
+- TSLint
