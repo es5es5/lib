@@ -12,6 +12,8 @@ VSCode Extensions
 - TSLint
 - open in browser
 - eclipse keymap
+- Instant Markdown
 
 User Settings
 - Editor > Minimap: Enabled = false
+
