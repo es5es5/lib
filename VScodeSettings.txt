@@ -16,4 +16,4 @@ VSCode Extensions
 
 User Settings
 - Editor > Minimap: Enabled = false
-
+- Terminal › Integrated › Shell: Windows = C:/Program Files/Git/bin/bash.exe
