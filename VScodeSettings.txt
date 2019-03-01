@@ -17,3 +17,13 @@ VSCode Extensions
 User Settings
 - Editor > Minimap: Enabled = false
 - Terminal › Integrated › Shell: Windows = C:/Program Files/Git/bin/bash.exe
+
+settings.json (in lhw-MacBook Pro)
+{
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "Material Syntax - Dark",
+    "window.zoomLevel": 0,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2
+}
