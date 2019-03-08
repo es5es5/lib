@@ -13,6 +13,7 @@ VSCode Extensions
 - open in browser
 - eclipse keymap
 - Instant Markdown
+- TODO Highlight
 
 User Settings
 - Editor > Minimap: Enabled = false
