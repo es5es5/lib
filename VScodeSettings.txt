@@ -14,6 +14,7 @@ VSCode Extensions
 - eclipse keymap
 - Instant Markdown
 - TODO Highlight
+- Auto Rename Tag
 
 User Settings
 - Editor > Minimap: Enabled = false
