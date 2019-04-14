@@ -15,6 +15,7 @@ VSCode Extensions
 - Instant Markdown
 - TODO Highlight
 - Auto Rename Tag
+- javascript console utils
 
 User Settings
 - Editor > Minimap: Enabled = false
