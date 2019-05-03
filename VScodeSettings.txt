@@ -23,6 +23,29 @@ https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bg
 User Settings
 - Editor > Minimap: Enabled = false
 - Terminal › Integrated › Shell: Windows = C:/Program Files/Git/bin/bash.exe
+- [Ctl+Shift+LeftArrow] : cursorWordStartLeftSelect
+- [Ctl+Shift+rightArrow] : cursorWordStartRightSelect
+
+{
+  "key": "ctrl+shift+right",
+  "command": "cursorWordEndRightSelect",
+  "when": "textInputFocus"
+}
+{
+  "key": "ctrl+shift+left",
+  "command": "cursorWordStartLeftSelect",
+  "when": "textInputFocus"
+}
+{
+  "key": "ctrl+shift+numpad_add",
+  "command": "editor.action.transformToUppercase",
+  "when": "editorTextFocus"
+}
+{
+  "key": "ctrl+shift+numpad_subtract",
+  "command": "editor.action.transformToLowercase",
+  "when": "editorTextFocus"
+}
 
 settings.json (in lhw-MacBook Pro)
 {
