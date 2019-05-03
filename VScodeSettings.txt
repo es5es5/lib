@@ -23,8 +23,8 @@ https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bg
 User Settings
 - Editor > Minimap: Enabled = false
 - Terminal › Integrated › Shell: Windows = C:/Program Files/Git/bin/bash.exe
-- [Ctl+Shift+LeftArrow] : cursorWordStartLeftSelect
-- [Ctl+Shift+rightArrow] : cursorWordStartRightSelect
+- [Ctl+Shift+LeftArrow] : cursorWordStartLeftSelect Only
+- [Ctl+Shift+rightArrow] : cursorWordStartRightSelect Only
 
 {
   "key": "ctrl+shift+right",
