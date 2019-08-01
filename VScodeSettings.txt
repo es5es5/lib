@@ -48,6 +48,14 @@ User Settings
   "command": "editor.action.transformToLowercase",
   "when": "editorTextFocus"
 }
+{
+  "key": "ctrl+shift+alt+n",
+  "command": "explorer.newFolder"
+}
+{
+  "key": "ctrl+alt+n",
+  "command": "explorer.newFile"
+}
 
 settings.json (in lhw-MacBook Pro)
 {
