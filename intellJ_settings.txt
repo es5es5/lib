@@ -2,10 +2,10 @@ Plugins
  -  Key Promoter X
 
 == Setting to closed the tab. ==
-Open Settings by hitting Ctrl+Alt+S
-Click: Keymap
-Search for: Close
-Under Main menu > Window > Editor Tabs, find Close.
-Right-click and click Remove Ctrl+F4.
-Right click and click Add Keyboard Shortcut
-Add your new custom Keyboard Shortcut.
+1. Open Settings by hitting Ctrl+Alt+S
+2. Click: Keymap
+3. Search for: Close
+4. Under Main menu > Window > Editor Tabs, find Close.
+5. Right-click and click Remove Ctrl+F4.
+6. Right click and click Add Keyboard Shortcut
+7. Add your new custom Keyboard Shortcut.
