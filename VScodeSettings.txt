@@ -28,6 +28,10 @@ User Settings
 - [Ctl+Shift+LeftArrow] : cursorWordStartLeftSelect Only
 - [Ctl+Shift+rightArrow] : cursorWordStartRightSelect Only
 
+Trim
+"files.trimFinalNewlines": true
+"files.trimTrailingWhitespace": true
+
 {
   "key": "ctrl+l",
   "command": "editor.action.insertSnippet",
