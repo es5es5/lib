@@ -1,23 +1,28 @@
-VSCode Extensions
-- Auto Close Tag
-- Beautify
-- Color Picker
-- ESlint
-- GitLens
-- Material Icon Theme
-- Material Syntax - Dark
-- Night Owl
-- Project Manager
-- Vetur
-- TSLint
-- open in browser
-- eclipse keymap
-- Instant Markdown
-- TODO Highlight
-- Auto Rename Tag
-- javascript console util
-- Vue VSCode Snippets
-- Live Server
+<h1>Louis's VSCode Settings.</h1>
+
+<h2>Extention List</h2>
+* Essential
+    - Vetur
+    - Auto Close Tag
+    - ESlint
+    - GitLens
+    - Material Icon Theme
+    - Material Syntax - Dark
+    - eclipse keymap
+    - Auto Rename Tag
+
+* Optional
+    - Beautify
+    - Color Picker
+    - Night Owl
+    - Project Manager
+    - TSLint
+    - open in browser
+    - Instant Markdown
+    - TODO Highlight
+    - javascript console util
+    - Vue VSCode Snippets
+    - Live Server
 
 And..
 https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bgdhQSYv3iNkKIgy6LrXkLh-Wp8TnGC_fDOKErOhPIl4
@@ -32,6 +37,7 @@ Trim
 "files.trimFinalNewlines": true
 "files.trimTrailingWhitespace": true
 
+```json
 {
   "key": "ctrl+l",
   "command": "editor.action.insertSnippet",
@@ -68,8 +74,11 @@ Trim
   "key": "ctrl+alt+n",
   "command": "explorer.newFile"
 }
+```
 
 settings.json (in lhw-MacBook Pro)
+
+```json
 {
     "editor.minimap.enabled": false,
     "workbench.colorTheme": "Material Syntax - Dark",
@@ -78,3 +87,4 @@ settings.json (in lhw-MacBook Pro)
     "editor.detectIndentation": false,
     "editor.tabSize": 2
 }
+```
