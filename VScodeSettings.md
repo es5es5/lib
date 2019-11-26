@@ -1,6 +1,7 @@
 <h1>Louis's VSCode Settings.</h1>
 
 <h2>Extention List</h2>
+
 * Essential
     - Vetur
     - Auto Close Tag
