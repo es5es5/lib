@@ -28,7 +28,8 @@
 And..
 https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bgdhQSYv3iNkKIgy6LrXkLh-Wp8TnGC_fDOKErOhPIl4
 
-User Settings
+<h3>User Settings for Windows<h3>
+    
 - Editor > Minimap: Enabled = false
 - Terminal › Integrated › Shell: Windows = C:/Program Files/Git/bin/bash.exe
 - [Ctl+Shift+LeftArrow] : cursorWordStartLeftSelect Only
@@ -36,6 +37,7 @@ User Settings
 
 Trim
 "files.trimFinalNewlines": true
+
 "files.trimTrailingWhitespace": true
 
 ```json
@@ -77,7 +79,9 @@ Trim
 }
 ```
 
-settings.json (in lhw-MacBook Pro)
+<hr>
+
+<h3>User Settings for Mac OS<h3>
 
 ```json
 {
