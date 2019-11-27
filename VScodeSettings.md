@@ -30,7 +30,7 @@ https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bg
 
 <h3>User Settings for Windows<h3>
 
-* setting.jon
+* setting.json
 ```json
 {
     "workbench.iconTheme": "material-icon-theme",
