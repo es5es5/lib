@@ -44,7 +44,7 @@ https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bg
 }
 ```
 
-* keybindings.json
+* keybindings.json (Keyboard Shortcuts)
 ```json
 // Place your key bindings in this file to override the defaults
 [
