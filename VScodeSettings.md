@@ -41,6 +41,7 @@ https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bg
     "editor.minimap.enabled": false,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true
+    "explorer.compactFolders": true
 }
 ```
 
