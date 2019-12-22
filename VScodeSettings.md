@@ -36,12 +36,12 @@ https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bg
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Material Syntax - Dark",
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 2,
     "editor.tabSize": 2,
     "editor.minimap.enabled": false,
     "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true
-    "explorer.compactFolders": true
+    "files.trimTrailingWhitespace": true,
+    "explorer.compactFolders": false
 }
 ```
 
