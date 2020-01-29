@@ -48,6 +48,7 @@ https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bg
 * keybindings.json (Keyboard Shortcuts)
 ```json
 // Place your key bindings in this file to override the defaults
+// Place your key bindings in this file to override the defaults
 [
   {
     "key": "ctrl+l",
@@ -78,11 +79,11 @@ https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bg
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+shift+alt+n",
+    "key": "ctrl+shift+n",
     "command": "explorer.newFolder"
   },
   {
-    "key": "ctrl+alt+n",
+    "key": "ctrl+n",
     "command": "explorer.newFile"
   },
   {
@@ -96,8 +97,12 @@ https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bg
     "when": "editorFocus"
   },
   {
-    "key": "ctrl+n",
-    "command": "explorer.newFile"
+    "key": "ctrl+shift+8",
+    "command": "editor.action.indentUsingTabs"
+  },
+  {
+    "key": "ctrl+shift+9",
+    "command": "editor.action.indentationToTabs"
   }
 ]
 ```
