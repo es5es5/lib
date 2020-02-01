@@ -48,7 +48,6 @@ https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bg
 * keybindings.json (Keyboard Shortcuts)
 ```json
 // Place your key bindings in this file to override the defaults
-// Place your key bindings in this file to override the defaults
 [
   {
     "key": "ctrl+l",
@@ -111,6 +110,7 @@ https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bg
 
 <h3>User Settings for Mac OS<h3>
 
+* setting.json
 ```json
 {
     "editor.minimap.enabled": false,
@@ -120,4 +120,65 @@ https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bg
     "editor.detectIndentation": false,
     "editor.tabSize": 2
 }
+
+```
+
+* keybindings.json (Keyboard Shortcuts)
+```json
+[
+  {
+    "key": "cmd+l",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+        "snippet": "console.log($1)$0"
+    }
+  },
+  {
+    "key": "shift+cmd+d",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+d",
+    "command": "-editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+cmd+=",
+    "command": "editor.action.transformToUppercase",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+x",
+    "command": "-editor.action.transformToUppercase",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+-",
+    "command": "editor.action.transformToLowercase",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+y",
+    "command": "-editor.action.transformToLowercase",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+9",
+    "command": "editor.action.indentUsingTabs"
+  },
+  {
+    "key": "shift+cmd+0",
+    "command": "editor.action.indentationToTabs"
+  },
+  {
+    "key": "cmd+n",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "shift+cmd+n",
+    "command": "explorer.newFolder"
+  }
+]
 ```
