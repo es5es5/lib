@@ -179,6 +179,10 @@ https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bg
   {
     "key": "shift+cmd+n",
     "command": "explorer.newFolder"
+  },
+  {
+    "key": "alt+f1",
+    "command": "workbench.files.action.showActiveFileInExplorer"
   }
 ]
 ```
