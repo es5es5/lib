@@ -129,6 +129,7 @@ https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bg
 
 * keybindings.json (Keyboard Shortcuts)
 ```json
+// Place your key bindings in this file to override the defaultsauto[]
 [
   {
     "key": "cmd+l",
@@ -187,6 +188,16 @@ https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bg
   {
     "key": "cmd+1",
     "command": "workbench.files.action.showActiveFileInExplorer"
+  },
+  {
+    "key": "shift+alt+right",
+    "command": "-cursorWordPartRightSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+left",
+    "command": "-cursorWordPartLeftSelect",
+    "when": "textInputFocus"
   }
 ]
 ```
