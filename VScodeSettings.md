@@ -24,6 +24,7 @@
     - javascript console util
     - Vue VSCode Snippets
     - Live Server
+    - change-case
 
 And..
 https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bgdhQSYv3iNkKIgy6LrXkLh-Wp8TnGC_fDOKErOhPIl4
