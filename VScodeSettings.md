@@ -11,6 +11,7 @@
     - Material Syntax - Dark
     - eclipse keymap
     - Auto Rename Tag
+    - Simple React Snippets
 
 * Optional
     - Beautify
