@@ -8,10 +8,11 @@
     - ESlint
     - GitLens
     - Material Icon Theme
-    - Material Syntax - Dark
+    - Material Syntax - Dark (but, I used 'dark-plus-syntax')
     - eclipse keymap
     - Auto Rename Tag
     - Simple React Snippets
+    - dark-plus-syntax
 
 * Optional
     - Beautify
