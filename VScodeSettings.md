@@ -45,7 +45,10 @@ https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bg
     "editor.minimap.enabled": false,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "explorer.compactFolders": false
+    "explorer.compactFolders": false,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    }
 }
 ```
 
@@ -126,7 +129,10 @@ https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bg
     "window.zoomLevel": 0,
     "workbench.iconTheme": "material-icon-theme",
     "editor.detectIndentation": false,
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    }
 }
 
 ```
