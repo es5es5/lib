@@ -13,6 +13,7 @@
     - Auto Rename Tag
     - Simple React Snippets
     - dark-plus-syntax
+    - VS Code ES7 React/Redux/React-Native/JS snippets
 
 * Optional
     - Beautify
