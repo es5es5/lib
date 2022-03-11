@@ -11,9 +11,8 @@
     - Material Syntax - Dark (but, I used 'dark-plus-syntax')
     - eclipse keymap
     - Auto Rename Tag
-    - Simple React Snippets
+    - React snippets (for React.js)
     - dark-plus-syntax
-    - VS Code ES7 React/Redux/React-Native/JS snippets
 
 * Optional
     - Beautify
