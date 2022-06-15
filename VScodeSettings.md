@@ -57,6 +57,14 @@ https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bg
 // Place your key bindings in this file to override the defaults
 [
   {
+    "key": "ctrl+i",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+        "snippet": "console.info($1)$0"
+    }
+  },
+  {
     "key": "ctrl+l",
     "command": "editor.action.insertSnippet",
     "when": "editorTextFocus",
