@@ -37,19 +37,85 @@ https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bg
 * setting.json
 ```json
 {
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Material Syntax - Dark",
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-    "window.zoomLevel": 2,
-    "editor.tabSize": 2,
-    "editor.minimap.enabled": false,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "explorer.compactFolders": false,
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    }
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "editor.tabSize": 2,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "explorer.compactFolders": false,
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"c:\\Users\\hwlee\\.vscode\\extensions\\gabrielbb.vscode-lombok-1.0.1\\server\\lombok.jar\"",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.minimap.maxColumn": 50,
+  "svg.preview.mode": "svg",
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.wordBasedSuggestions": "off",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "fabianlauer.vs-code-xml-format"
+  },
+  "editor.minimap.enabled": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.codeActionsOnSave": {
+      "dart.allowAnalytics": "never",
+      "dart.previewLsp": "explicit",
+      "editor.formatOnSave": "explicit",
+      "quickfix.insertSemicolon": "explicit"
+    },
+    "editor.rulers": [500],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "dart.showInspectorNotificationsForWidgetErrors": false,
+  "spring-boot.ls.java.home": "C:\\Program Files (x86)\\ojdkbuild\\jdk-11",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "workbench.colorTheme": "Default Dark+",
+  "window.title": "${folderName}",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "vue-html": "html",
+    "vue": "html"
+  },
+  "editor.accessibilitySupport": "off",
+  "window.zoomLevel": 1,
+  "[css]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+  },
+  "eslint.codeActionsOnSave.rules": null,
+  "eslint.format.enable": true,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editor.enablePreview": false,
+  "git.ignoreRebaseWarning": true
 }
+
 ```
 
 * keybindings.json (Keyboard Shortcuts)
