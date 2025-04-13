@@ -123,19 +123,52 @@ https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bg
 // Place your key bindings in this file to override the defaults
 [
   {
-    "key": "ctrl+i",
-    "command": "editor.action.insertSnippet",
-    "when": "editorTextFocus",
-    "args": {
-        "snippet": "console.info($1)$0"
-    }
-  },
-  {
     "key": "ctrl+l",
     "command": "editor.action.insertSnippet",
     "when": "editorTextFocus",
     "args": {
-        "snippet": "console.log($1)$0"
+      "snippet": "console.log(${TM_SELECTED_TEXT}$1)$0"
+    }
+  },
+  // {
+  //   "key": "ctrl+l",
+  //   "command": "editor.action.insertSnippet",
+  //   "when": "editorTextFocus",
+  //   "args": {
+  //     "snippet": "print(${TM_SELECTED_TEXT}$1)$0;",
+  //     "scope": "dart"
+  //   }
+  // },
+  {
+    "key": "ctrl+i",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "console.info(${TM_SELECTED_TEXT}$1)$0"
+    }
+  },
+  {
+    "key": "ctrl+shift+t",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "this.$$t('issue.$1')$0"
+    }
+  },
+  {
+    "key": "alt+t",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "$1: '$1',"
+    }
+  },
+  {
+    "key": "ctrl+t",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "{{ $$t('issue.$1') }}$0"
     }
   },
   {
@@ -187,8 +220,62 @@ https://amati.io/2019/04/25/vs-code-extension-for-fe/?fbclid=IwAR3MKuHWIPGQRx2bg
   {
     "key": "alt+f1",
     "command": "workbench.files.action.showActiveFileInExplorer"
+  },
+  {
+    "key": "ctrl+oem_plus",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "ctrl+oem_minus",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+numpad_add",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "ctrl+shift+oem_minus",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+numpad_subtract",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+shift+oem_plus",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "ctrl+numpad0",
+    "command": "-workbench.action.zoomReset"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "-workbench.action.files.saveAll"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "-workbench.action.files.saveAs"
+  },
+  {
+    "key": "ctrl+k ctrl+shift+s",
+    "command": "-workbench.action.files.saveWithoutFormatting"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "workbench.action.files.saveWithoutFormatting"
+  },
+  {
+    "key": "ctrl+oem_period",
+    "command": "-editor.action.marker.next",
+    "when": "editorFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+oem_4",
+    "command": "-workbench.action.splitEditor"
   }
 ]
+
 ```
 
 <hr>
